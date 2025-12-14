@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Internet Data</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three-globe@4.5.0/dist/three-globe.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Global Internet Speeds</h1>
+  </header>
+
+  <main>
+    <div class="controls">
+      <label for="countrySelect">Select Country:</label>
+      <select id="countrySelect">
+        <option value="">--All Countries--</option>
+      </select>
+    </div>
+
+    <div class="charts">
+      <canvas id="speedChart"></canvas>
+    </div>
+
+    <div id="globeContainer"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
